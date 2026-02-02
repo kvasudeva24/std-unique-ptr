@@ -30,3 +30,24 @@ Things to do:
 See what new does and what it returns (in fail cases too)
 Create the .h file 
 
+
+
+What is the keyword new?:
+
+New takes a lot of time because it does a lot of steps
+
+New finds a block of memory that will hold our object and give us a pointer back to the memory address of that object
+
+It also calls the constructor of the type
+
+new techically returns a void* 
+delete also calls the destructor
+placement new takes a memory address and rerwrites bytes?? (learn more)
+
+operator new is slightly different as that is the cpp version of malloc
+keyword new returns an actual typed pointer
+
+malloc --> aligned for largest suitable type
+new --> aligned with the type you request
+
+that is why placement new requires alignas
